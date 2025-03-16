@@ -37,7 +37,7 @@ for article in news_articles:
     
     # Image column
     with col1:
-        st.image(article["image_url"], width=150)
+        st.image(article["image_url"])#, width=150)
     
     # Text column
     with col2:
