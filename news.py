@@ -25,7 +25,7 @@ def get_response():
 a = get_response()
 
 # Streamlit app implementation
-st.header("Wrestling News")
+#st.header("Wrestling News")
 
 # Parse the JSON data (assuming a.output_text contains the JSON string)
 news_articles = json.loads(a.output_text)
