@@ -25,7 +25,7 @@ def get_response():
 a = get_response()
 
 # Streamlit app implementation
-st.title("Wrestling News")
+st.header("Wrestling News")
 
 # Parse the JSON data (assuming a.output_text contains the JSON string)
 news_articles = json.loads(a.output_text)
@@ -41,7 +41,7 @@ for article in news_articles:
     
     # Text column
     with col2:
-        st.subheader(article["news_title"])
+        st.markdown(article["news_title"])
         st.write(f"[Read more]({article['news_url']})")
     
     # Add divider between articles
